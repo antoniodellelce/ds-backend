@@ -8,4 +8,6 @@ FROM alpine
 
 COPY --from=source /backend /backend
 
+EXPOSE 8080
+
 CMD ["/backend"]
