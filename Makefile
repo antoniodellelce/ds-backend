@@ -6,3 +6,7 @@ help:
 
 build:
 	@docker build -t $(TARGET) .
+
+# login expected to be done by ci
+push:
+	@docker push $(TARGET)
